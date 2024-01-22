@@ -40,7 +40,7 @@ int main()
             printf("\n%d/5 chances remaining", turns);
         } while (turns > 0);
         displayResult();
-        printf("Do you want to continue? (Y/N): ");
+        printf("\nDo you want to continue? (Y/N): ");
         scanf("%c");
         scanf("%c", &keepPlaying);
         keepPlaying = toupper(keepPlaying);
@@ -54,7 +54,9 @@ void displayResult()
 {
     if (answer == guess)
     {
+        printf("\n******************************************");
         printf("\nCongratulations! the number was %d", answer);
+        printf("\n******************************************");
     }
     else
     {
